@@ -24,6 +24,7 @@ export default function Footer() {
 
                         <div className="col-lg-3 col-md-6 footer-contact">
                             <h3>Dramastra</h3>
+                            <i>New Vision on technology</i>
                             {/* <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
@@ -73,14 +74,14 @@ export default function Footer() {
 
             <div className="container footer-bottom clearfix">
                 <div className="copyright">
-                    &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Dramastra</span></strong>. All Rights Reserved
                 </div>
                 <div className="credits">
                     {/* <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ --> */}
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    {/* Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> */}
                 </div>
             </div>
         </footer>

@@ -9,6 +9,7 @@ export default function Header() {
                 <div className="container d-flex align-items-center">
 
                     <h1 className="logo me-auto"><a href="#">Dramastra</a></h1>
+
                     {/* <Link href="index.html" className="logo me-auto"><Image src="assets/img/logo.png" width="100" height="100" alt="" className="img-fluid" /></Link> */}
 
                     <nav id="navbar" className="navbar">
