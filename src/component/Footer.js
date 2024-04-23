@@ -23,7 +23,7 @@ export default function Footer() {
                     <div className="row">
 
                         <div className="col-lg-3 col-md-6 footer-contact">
-                            <h3>Arsha</h3>
+                            <h3>Dramastra</h3>
                             {/* <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
@@ -37,14 +37,14 @@ export default function Footer() {
                             <h4>Useful Links</h4>
                             <ul>
                                 <li><i className="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                                <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+                                <li><i className="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+                                {/* <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li> */}
+                                {/* <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> */}
                             </ul>
                         </div>
 
-                        <div className="col-lg-3 col-md-6 footer-links">
+                        {/* <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Our Services</h4>
                             <ul>
                                 <li><i className="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -53,9 +53,9 @@ export default function Footer() {
                                 <li><i className="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
                                 <li><i className="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
                             </ul>
-                        </div>
+                        </div> */}
 
-                        <div className="col-lg-3 col-md-6 footer-links">
+                        {/* <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Our Social Networks</h4>
                             <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                             <div className="social-links mt-3">
@@ -65,7 +65,7 @@ export default function Footer() {
                                 <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
                                 <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>

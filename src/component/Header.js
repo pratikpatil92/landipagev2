@@ -8,7 +8,7 @@ export default function Header() {
             <header id="header" className="fixed-top ">
                 <div className="container d-flex align-items-center">
 
-                    <h1 className="logo me-auto"><a href="index.html">Arsha</a></h1>
+                    <h1 className="logo me-auto"><a href="#">Dramastra</a></h1>
                     {/* <Link href="index.html" className="logo me-auto"><Image src="assets/img/logo.png" width="100" height="100" alt="" className="img-fluid" /></Link> */}
 
                     <nav id="navbar" className="navbar">
@@ -16,8 +16,9 @@ export default function Header() {
                             <li><Link className="nav-link scrollto active" href="#hero">Home</Link></li>
                             <li><Link className="nav-link scrollto" href="#about">About</Link></li>
                             <li><Link className="nav-link scrollto" href="#services">Services</Link></li>
-                            <li><Link className="nav-link scrollto" href="#portfolio">Portfolio</Link></li>
-                            <li><Link className="nav-link scrollto" href="#team">Team</Link></li>
+                            <li><Link className="nav-link scrollto" href="#faq">FAQ</Link></li>
+                            {/* <li><Link className="nav-link scrollto" href="#portfolio">Portfolio</Link></li> */}
+                            {/* <li><Link className="nav-link scrollto" href="#team">Team</Link></li> */}
                             {/* <li className="dropdown"><Link href="#"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></Link>
                                 <ul>
                                     <li><Link href="#">Drop Down 1</Link></li>
@@ -36,7 +37,7 @@ export default function Header() {
                                 </ul>
                             </li> */}
                             <li><Link className="nav-link scrollto" href="#contact">Contact</Link></li>
-                            <li><Link className="getstarted scrollto" href="#about">Get Started</Link></li>
+                            <li><Link className="getstarted scrollto" href="#contact">Get Started</Link></li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>
                     </nav>
@@ -51,7 +52,7 @@ export default function Header() {
                             <h1>Better Solutions For Your Business</h1>
                             <h2>We are team of talented designers making websites with Bootstrap</h2>
                             <div className="d-flex justify-content-center justify-content-lg-start">
-                                <a href="#about" className="btn-get-started scrollto">Get Started</a>
+                                <a href="#contact" className="btn-get-started scrollto">Get Started</a>
                                 {/* <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox btn-watch-video"><i className="bi bi-play-circle"></i><span>Watch Video</span></a> */}
                             </div>
                         </div>

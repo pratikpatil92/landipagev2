@@ -10,37 +10,37 @@ export default function WhyUs() {
                     <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
                         <div className="content">
-                            <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                            <h3>Why Choose Us</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                We understand that selecting the right software solutions provider is crucial for the success of your business. Here are some compelling reasons to choose us:
                             </p>
                         </div>
 
                         <div className="accordion-list">
                             <ul>
                                 <li>
-                                    <a data-bs-toggle="collapse" className="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
+                                    <a data-bs-toggle="collapse" className="collapse" data-bs-target="#accordion-list-1"><span>01</span> Expertise and Innovation <i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-1" className="collapse show" data-bs-parent=".accordion-list">
                                         <p>
-                                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                            With years of experience and a passion for innovation, we excel in delivering cutting-edge solutions that meet your unique requirements. Our team of experts stays updated with the latest technologies and trends to ensure that you receive the most advanced and effective solutions for your business.
                                         </p>
                                     </div>
                                 </li>
 
                                 <li>
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" className="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" className="collapsed"><span>02</span> Customized Solutions <i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-2" className="collapse" data-bs-parent=".accordion-list">
                                         <p>
-                                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                            We understand that every business is different. That's why we offer tailor-made solutions that are specifically designed to address your business challenges and goals. Whether you need custom software development, IT infrastructure solutions, or consultancy services, we've got you covered.
                                         </p>
                                     </div>
                                 </li>
 
                                 <li>
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" className="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" className="collapsed"><span>03</span> Exceptional Customer Service <i className="bx bx-chevron-down icon-show"></i><i className="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-3" className="collapse" data-bs-parent=".accordion-list">
                                         <p>
-                                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                            Your satisfaction is our top priority. We pride ourselves on providing exceptional customer service and support throughout the project lifecycle and beyond. Our dedicated team is always available to address your concerns, answer your questions, and ensure that your experience with us is nothing short of excellent.
                                         </p>
                                     </div>
                                 </li>
