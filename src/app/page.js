@@ -1,3 +1,4 @@
+"use client"
 import AboutUs from "@/component/AboutUs";
 import Header from "@/component/Header";
 import WhyUs from "@/component/WhyUs";
@@ -13,7 +14,7 @@ import Footer from "@/component/Footer";
 export default function Home() {
   return (
     <>
-      <Header></Header>
+      <Header />
       <AboutUs />
       <WhyUs />
       <Services />

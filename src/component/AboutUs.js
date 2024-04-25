@@ -21,10 +21,10 @@ export default function AboutUs() {
                             At our core, we believe in leveraging technology to simplify complexities and enhance efficiency. Whether it's developing custom software applications, implementing robust IT infrastructure, or providing expert consultancy services, we are committed to exceeding our clients' expectations every step of the way.
                         </p>
                         <ul>
-                            <li><i class="ri-check-double-line"></i> Custom software development</li>
-                            <li><i class="ri-check-double-line"></i> IT infrastructure solutions</li>
-                            <li><i class="ri-check-double-line"></i> Consultancy and project management</li>
-                            <li><i class="ri-check-double-line"></i> Ongoing support and maintenance</li>
+                            <li><i className="ri-check-double-line"></i> Custom software development</li>
+                            <li><i className="ri-check-double-line"></i> IT infrastructure solutions</li>
+                            <li><i className="ri-check-double-line"></i> Consultancy and project management</li>
+                            <li><i className="ri-check-double-line"></i> Ongoing support and maintenance</li>
                         </ul>
                     </div>
                     <div className="col-lg-6 pt-4 pt-lg-0">

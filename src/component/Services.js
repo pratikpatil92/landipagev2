@@ -5,7 +5,7 @@ export default function Services() {
         <section id="services" className="services section-bg">
             <div className="container" data-aos="fade-up">
 
-                <div class="section-title">
+                <div className="section-title">
                     <h2>Services</h2>
                     <p>At our company, we offer a wide range of services to cater to your business needs. Our goal is to provide innovative solutions that help you achieve your objectives and stay ahead in the competitive market.</p>
                 </div>
