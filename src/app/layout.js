@@ -9,6 +9,7 @@ import "./../../public/assets/vendor/glightbox/css/glightbox.min.css"
 import "./../../public/assets/vendor/remixicon/remixicon.css"
 import "./../../public/assets/vendor/swiper/swiper-bundle.min.css"
 import "./../../public/assets/css/style.css"
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

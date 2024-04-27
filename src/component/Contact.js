@@ -1,6 +1,79 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Contact() {
+    let initialValue = {
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    }
+    const [value, setValue] = useState(initialValue)
+    const [success, setSuccess] = useState("")
+    const [error, setError] = useState(true)
+    const [loading, setLoading] = useState(false)
+
+
+    const postContact = () => {
+        if (!value.name &&
+            !value.email &&
+            !value.subject &&
+            !value.message) {
+            setError(true)
+            return
+        }
+        setLoading(true)
+        let body = {
+            "firstName": value.name,
+            "lastName": "",
+            "email": value.email,
+            "phone": "",
+            "subject": value.Subject,
+            "message": value.Message
+        }
+        axios.post(`${process.env.NEXT_PUBLIC_API_URL}api/v1/contactus`, body).then((res) => {
+            setLoading(false)
+            toast.success("Mail sent successfully", {
+                position: "bottom-center",
+                autoClose: 2000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            })
+        }).catch((err) => {
+            setLoading(false)
+            toast.error("Somthing went wrong", {
+                position: "bottom-center",
+                autoClose: 2000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            })
+
+        })
+    }
+    const onSubmit = (e) => {
+        e.preventDefault()
+        postContact()
+        setValue(initialValue)
+    }
+
+    const handleChange = (e) => {
+        setError(false)
+        setValue({
+            ...value,
+            [e.target.name]: e.target.value
+        })
+    }
+
     return (
         <section id="contact" className="contact">
             <div className="container" data-aos="fade-up">
@@ -38,29 +111,29 @@ export default function Contact() {
                     </div> */}
 
                     {/* <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"> */}
-                    <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                    <form onSubmit={onSubmit} method="post" role="form" className="php-email-form1">
                         <div className="row">
                             <div className="form-group col-md-6">
                                 <label htmlFor="name">Your Name</label>
-                                <input type="text" name="name" className="form-control" id="name" required />
+                                <input value={value.name} type="text" name="name" onChange={handleChange} className="form-control" id="name" required />
                             </div>
                             <div className="form-group col-md-6">
                                 <label htmlFor="name">Your Email</label>
-                                <input type="email" className="form-control" name="email" id="email" required />
+                                <input type="email" value={value.email} className="form-control" onChange={handleChange} name="email" id="email" required />
                             </div>
                         </div>
                         <div className="form-group">
                             <label htmlFor="name">Subject</label>
-                            <input type="text" className="form-control" name="subject" id="subject" required />
+                            <input type="text" value={value.subject} className="form-control" onChange={handleChange} name="subject" id="subject" required />
                         </div>
                         <div className="form-group">
                             <label htmlFor="name">Message</label>
-                            <textarea className="form-control" name="message" rows="10" required></textarea>
+                            <textarea value={value.message} className="form-control" name="message" onChange={handleChange} rows="10" required></textarea>
                         </div>
                         <div className="my-3">
-                            <div className="loading">Loading</div>
-                            <div className="error-message"></div>
-                            <div className="sent-message">Your message has been sent. Thank you!</div>
+                            {loading ? <div className="loading">Loading</div> : null}
+                            {/* {error ? <div className="error-message">Please fill all fields</div> : null}
+                            {success ? <div className="sent-message">Your message has been sent. Thank you!</div> : null} */}
                         </div>
                         <div className="text-center"><button type="submit">Send Message</button></div>
                     </form>
@@ -69,6 +142,7 @@ export default function Contact() {
                 {/* </div> */}
 
             </div>
+            <ToastContainer />
         </section>
     )
 }
