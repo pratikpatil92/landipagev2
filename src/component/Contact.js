@@ -30,8 +30,8 @@ export default function Contact() {
             "lastName": "",
             "email": value.email,
             "phone": "",
-            "subject": value.Subject,
-            "message": value.Message
+            "subject": value.subject,
+            "message": value.message
         }
         axios.post(`${process.env.NEXT_PUBLIC_API_URL}api/v1/contactus`, body).then((res) => {
             setLoading(false)
